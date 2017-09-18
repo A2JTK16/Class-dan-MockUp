@@ -17,7 +17,7 @@
 	<div class="header">
              <div class="logo">
                 <img src="logo/logo.png">
-             </div> <!-logo-->
+             </div> <!--logo-->
              
              <div class="find">
                  <img src="icon/acount.png">
