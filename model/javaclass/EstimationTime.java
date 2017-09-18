@@ -11,7 +11,7 @@ import javax.tools.JavaFileManager.Location;
  *
  * @author Reza Dwi Kurniawan
  */
-public class Estimation_Time {
+public class EstimationTime {
     private int distance;
     private int speed;
     private int estimationTime;
