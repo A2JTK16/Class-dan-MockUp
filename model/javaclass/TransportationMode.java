@@ -9,7 +9,7 @@ package task_proyek3;
  *
  * @author Reza Dwi Kurniawan
  */
-public class Transportation_mode {
+public class TransportationMode {
     private String idKendaraan;
     private String namaKendaraan;
     private int transportationSpeed;
