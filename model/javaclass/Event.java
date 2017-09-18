@@ -11,15 +11,16 @@
  */
 class Event {
     
-    private long id_event;
+    private int id_event; //saya rubah dari long menjadi int
     private String eventName;
     private int arrivaltime;
     private int departuretime;
     //String location;
-    private short reminderoption;
+    private int reminderoption; //saya rubah dari short menjadi int
     private String note;
     
-    public Event(long id_event, String eventName, int arrivaltime, int departuretime, short reminderoption, String note){
+    //penamaan event saya ganti menjadi addEvent supaya tidak jadi kontrakstor
+    public void addEvent(int id_event, String eventName, int arrivaltime, int departuretime, int reminderoption, String note){
         this.id_event = id_event;
         this.eventName = eventName;
         this.arrivaltime = arrivaltime;
@@ -27,10 +28,11 @@ class Event {
         this.reminderoption = reminderoption;
         this.note = note;
     }
+
 /**
      * @return the id_event
      */
-    public long getId_event() {
+    public int getId_event() {
         return id_event;
     }
 
@@ -58,7 +60,7 @@ class Event {
     /**
      * @return the reminderoption
      */
-    public Short getReminderoption() {
+    public int getReminderoption() {
         return reminderoption;
     }
 
@@ -72,7 +74,7 @@ class Event {
     /**
      * @param id_event the id_event to set
      */
-    public void setId_event(long id_event) {
+    public void setId_event(int id_event) {
         this.id_event = id_event;
     }
 
@@ -100,7 +102,7 @@ class Event {
     /**
      * @param reminderoption the reminderoption to set
      */
-    public void setReminderoption(short reminderoption) {
+    public void setReminderoption(int reminderoption) {
         this.reminderoption = reminderoption;
     }
 
@@ -110,4 +112,15 @@ class Event {
     public void setNote(String note) {
         this.note = note;
     }
+    
+    //Method supaya programbisa di running
+    public static void main(String[] args)
+    {
+       Event E = new Event();
+       
+       //Method input
+       E.addEvent(1234,"apajare",123,123,123,"apane");
+       //Method print ke layar
+       System.out.println("Event : " + E.id_event);
+    }   
 }
