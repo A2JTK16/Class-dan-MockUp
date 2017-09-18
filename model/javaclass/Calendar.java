@@ -10,6 +10,7 @@
  */
 /*Tanggal
 Event
+"CATATAN EDIT OLEH SAID : Menambahkan method main supaya program bisa di running"
 - judul event
 - lokasi event
 - ket event
@@ -74,5 +75,16 @@ public class Calendar {
      */
     public void setKetEvent(String ketEvent) {
         this.ketEvent = ketEvent;
+    }
+    
+    //Method supaya program bisa di running
+    public static void main(String[] args)
+    {
+       Calendar C = new Calendar();
+       
+       //Method input
+       C.setTanggal(23);
+       //Method print ke layar
+       System.out.println("Tanggal : " + C.getTanggal());
     }
 }
