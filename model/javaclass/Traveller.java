@@ -94,17 +94,16 @@ public class Traveller {
     }
 
     public static void main(String[] args) {
-        // TODO code application logic here
-        Traveller aul = new Traveller ();
-        aul.setId_traveller(421998);
-        aul.setUsername("auliyaaqma");
-        aul.setEmail("auliyaaqma@gmail.com");
-        aul.setFullname("Auliya Aqma Dinillah");
-        aul.setPassword("auliyaaaaaa");
-        System.out.println("Id Traveller : " + aul.getId_traveller());
-        System.out.println("Username     : " + aul.getUsername());
-        System.out.println("Full Name    : " + aul.getFullname());
-        System.out.println("Email        : " + aul.getEmail());
-        System.out.println("Password     : " + aul.getPassword());
+        Traveller data = new Traveller ();
+        data.setId_traveller(421998);
+        data.setUsername("maryammm");
+        data.setEmail("maryam@gmail.com");
+        data.setFullname("Siti Maryam");
+        data.setPassword("maryam123");
+        System.out.println("Id Traveller : " + data.getId_traveller());
+        System.out.println("Username     : " + data.getUsername());
+        System.out.println("Full Name    : " + data.getFullname());
+        System.out.println("Email        : " + data.getEmail());
+        System.out.println("Password     : " + data.getPassword());
     }
 }
