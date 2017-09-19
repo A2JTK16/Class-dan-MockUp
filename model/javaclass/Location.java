@@ -3,62 +3,89 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package belajarjava;
+package travlendara2;
 
 /**
  *
  * @author ASUS
  */
 public class Location {
-    //deklarasi atribut
-    private String name;
-    private double longitude; //longitude = garis bujur
-    private double latitude;  //latitude = garis lintang
-   
-    // create and initialize a point with given name and
-    // (latitude, longitude) specified in degrees
-    public Location(String name, double latitude, double longitude) {
-        this.name = name;
-        this.latitude  = latitude;
-        this.longitude = longitude;
+    //atribute
+    private int kode_lokasi;
+    private String nama_lokasi;
+
+    /**
+     * @return the kode_lokasi
+     */
+    public int getKode_lokasi() {
+        return kode_lokasi;
     }
 
-    // return distance between this location and that location
-    // measured in statute miles
-//Nautical mile atau dalam bahasa Indonesia mil laut adalah satuan panjang yang  digunakan di seluruh dunia untuk keperluan kelautan seperti menghitung jarak dalam pelayaran dan penerbangan. Satu mil laut sama dengan 1,852 km; 1,1508 mil normal
-//untuk menghitung jarak antar lokasi
-    public double distanceTo(Location that) {
-        double STATUTE_MILES_PER_NAUTICAL_MILE = 1.15077945;
-        double lat1 = Math.toRadians(this.latitude); //latitude lokasi 1
-        double lon1 = Math.toRadians(this.longitude); //longitude lokasi 1
-        double lat2 = Math.toRadians(that.latitude); //latitude lokasi 2
-        double lon2 = Math.toRadians(that.longitude); //longitude lokasi 2
-
-        // great circle distance in radians, using law of cosines formula (aturan kosinus)
-  //Method acos() mengembalikan nilai arccosine dari nilai double yang ditentukan. Acos = invers cosinus.
-
-        double angle = Math.acos(Math.sin(lat1) * Math.sin(lat2)
-                               + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2));
-
-        // each degree on a great circle of Earth is 60 nautical miles
-// Setiap derajat pada lingkaran besar Bumi adalah 60 mil laut
-
-        double nauticalMiles = 60 * Math.toDegrees(angle);
-        double statuteMiles = STATUTE_MILES_PER_NAUTICAL_MILE * nauticalMiles;
-        return statuteMiles; //mengembalikan nilai
+    /**
+     * @param kode_lokasi the kode_lokasi to set
+     */
+    public void setKode_lokasi(int kode_lokasi) {
+        this.kode_lokasi = kode_lokasi;
     }
 
-    // return string representation of this point
-    public String toString() {
-        return name + " (" + latitude + ", " + longitude + ")";
+    /**
+     * @return the nama_lokasi
+     */
+    public String getNama_lokasi() {
+        return nama_lokasi;
     }
 
-    // test client
+    /**
+     * @param nama_lokasi the nama_lokasi to set
+     */
+    public void setNama_lokasi(String nama_lokasi) {
+        this.nama_lokasi = nama_lokasi;
+    }
     public static void main(String[] args) {
-        Location loc1 = new Location("JAKARTA", -6.21462, 106.84513);
-        Location loc2 = new Location("BANDUNG", -6.914744, 107.609810);  
-        double distance = loc1.distanceTo(loc2);
-        System.out.println(distance + " miles from");
-        System.out.println(loc1 + " to " + loc2);
+        Location lok_1 = new Location();
+        lok_1.setKode_lokasi(10001);
+        lok_1.setNama_lokasi("Rumah");
+        
+        Location lok_2 = new Location();
+        lok_2.setKode_lokasi(10002);
+        lok_2.setNama_lokasi("Kantor DPRD Bangka Tengah");
+        
+        Location lok_3 = new Location();
+        lok_3.setKode_lokasi(10003);
+        lok_3.setNama_lokasi("Bandara Depati Amir");
+        
+        Location lok_4 = new Location();
+        lok_4.setKode_lokasi(20001);
+        lok_4.setNama_lokasi("Bandara Soekarno Hatta");
+        
+        Location lok_5 = new Location();
+        lok_5.setKode_lokasi(20002);
+        lok_5.setNama_lokasi("Kantor DPRD Jakarta");
+        
+        Location lok_6 = new Location();
+        lok_6.setKode_lokasi(30001);
+        lok_6.setNama_lokasi("Tangerang");
+        
+        Location lok_7 = new Location();
+        lok_7.setKode_lokasi(20001);
+        lok_7.setNama_lokasi("Bandara Soekarno Hatta");
+        
+        Location lok_8 = new Location();
+        lok_8.setKode_lokasi(10002);
+        lok_8.setNama_lokasi("Kantor DPRD Bangka Tengah");
+        
+        Location lok_9 = new Location();
+        lok_9.setKode_lokasi(10001);
+        lok_9.setNama_lokasi("Rumah");
+        
+        System.out.print(lok_1.getNama_lokasi() + " -> ");
+        System.out.print(lok_2.getNama_lokasi() + " -> ");
+        System.out.print(lok_3.getNama_lokasi() + " -> ");
+        System.out.print(lok_4.getNama_lokasi() + " -> ");
+        System.out.print(lok_5.getNama_lokasi() + " -> ");
+        System.out.print(lok_6.getNama_lokasi() + " -> ");
+        System.out.print(lok_7.getNama_lokasi() + " -> ");
+        System.out.print(lok_8.getNama_lokasi() + " -> ");
+        System.out.print(lok_9.getNama_lokasi());
     }
 }
