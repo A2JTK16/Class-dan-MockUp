@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,7 +6,9 @@
  */
 package task_proyek3;
 
-import javax.tools.JavaFileManager.Location;
+import java.util.Date;
+import task_proyek3.TransportationMode.Transport;
+
 
 /**
  *
@@ -14,8 +17,7 @@ import javax.tools.JavaFileManager.Location;
 public class EstimationTime {
     private int distance;
     private int speed;
-    private int estimationTime;
-
+   
     /**
      * @return the distance
      */
@@ -43,15 +45,21 @@ public class EstimationTime {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+ 
+    public int countEstimationTime(int speed, int distance){
+        this.speed = speed;
+        this.distance = distance;        
+        return distance/speed;
+    }
     
-    public int countEstimationTime(){
-        int transportationSpeed;
-        String transportationName = null;
-        Transportation_mode tMode = new Transportation_mode(); //instansiasi objek baru
-        transportationSpeed = tMode.countTransportationSpeed(transportationName); //pengsian nilai dari method countTransportationSpeed di objek tMode ke var transportationSpeed
-        Location location1 = new Location(-6.914744,107.609810); //instansiasi lokasi pertama dan pengisian nilai menggunakan konstruktor *latlong untuk kota bandung
-        Location location2 = new Location(-6.121435,106.774124); //instansiasi lokasi kedua dan pengisian nilai menggunakan konstruktor *latlong untuk kota jakarta
-        int distance = location1.distanceTo(location2); //penghitungan jarak dari lok1 ke lok2 menggunakan method distanceTo di class yang lain
-        return estimationTime = distance/transportationSpeed; //mengembalikan nilai int yang dijadikan sebagai estimation time arrival
+    public static void main(String[] args) {
+        Transport tp = null;
+        int speed, jarak;
+        TransportationMode tm = new TransportationMode();
+        EstimationTime et = new EstimationTime();
+        et.setDistance(100);
+        jarak = et.getDistance();
+        speed = tm.vehicleSpeed(tp.Mobil);
+        System.out.println(et.countEstimationTime(speed,jarak)+" hours");
     }
 }
