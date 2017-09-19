@@ -16,7 +16,7 @@ Event
 - ket event
 Catatan*/
 public class Calendar {
-    private int tanggal;
+    private Date tanggal;
     private String judulEvent;
     private String lokasiEvent;
     private String ketEvent;
@@ -31,7 +31,7 @@ public class Calendar {
     /**
      * @param tanggal the tanggal to set
      */
-    public void setTanggal(int tanggal) {
+    public void setTanggal(Date tanggal) {
         this.tanggal = tanggal;
     }
 
@@ -83,7 +83,8 @@ public class Calendar {
        Calendar C = new Calendar();
        
        //Method input
-       C.setTanggal(23);
+        // Perlu Method Parsing String ke Date
+       CC.setTanggal(11-01-1998);
        //Method print ke layar
        System.out.println("Tanggal : " + C.getTanggal());
     }
