@@ -10,63 +10,46 @@ package task_proyek3;
  * @author Reza Dwi Kurniawan
  */
 public class TransportationMode {
-    private String idKendaraan;
-    private String namaKendaraan;
-    private int transportationSpeed;
+    private Transport jenisKendaraan;
     
-    public Transportation_mode(String namaKendaraan, String idKendaraan){
-    idKendaraan = this.namaKendaraan;
-    namaKendaraan = this.idKendaraan;
-}
-
-    Transportation_mode() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     * @return the jenisKendaraan
+     */
+    public Transport getJenisKendaraan() {
+        return jenisKendaraan;
     }
 
     /**
-     * @return the idKendaraan
+     * @param jenisKendaraan the jenisKendaraan to set
      */
-    public String getIdKendaraan() {
-        return idKendaraan;
-    }
-
-    /**
-     * @return the namaKendaraan
-     */
-    public String getNamaKendaraan() {
-        return namaKendaraan;
-    }
-
-    /**
-     * @param idKendaraan the idKendaraan to set
-     */
-    public void setIdKendaraan(String idKendaraan) {
-        this.idKendaraan = idKendaraan;
-    }
-
-    /**
-     * @param namaKendaraan the namaKendaraan to set
-     */
-    public void setNamaKendaraan(String namaKendaraan) {
-        this.namaKendaraan = namaKendaraan;
+    public void setJenisKendaraan(Transport jenisKendaraan) {
+        this.jenisKendaraan = jenisKendaraan;
     }
     
-    public int countTransportationSpeed (String namaKendaraan){
-        String transportationName = null;
-        switch (transportationName){
-            case "sepeda" :
-                transportationSpeed = 10; //set speed untuk sepeda
+    public enum Transport{
+        Mobil, Motor, Pesawat, Kereta, Bus;
+    }
+    
+    public int vehicleSpeed (Transport vhc){
+        int speed = 0;
+        switch(vhc){
+            case Mobil :
+                speed = 50;
                 break;
-            case "motor" :
-                transportationSpeed = 60; //set speed untuk motor
+            case Motor :
+                speed = 60;
                 break;
-            case "mobil" :
-                transportationSpeed = 40; //set speed untuk mobil
+            case Pesawat :
+                speed = 900;
+                break;
+            case Kereta :
+                speed = 150;
+                break;
+            case Bus :
+                speed = 40;
                 break;
         }
-        return transportationSpeed;
+        return speed;
     }
-    
-    
-    
+
 }
