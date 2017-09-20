@@ -3,124 +3,120 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import java.util.Calendar;
+import java.util.Scanner;
 
 /**
  *
  * @author AGS
  */
-class Event {
+public class Event {
     
-    private int id_event; //saya rubah dari long menjadi int
-    private String eventName;
-    private int arrivaltime;
-    private int departuretime;
-    //String location;
-    private int reminderoption; //saya rubah dari short menjadi int
-    private String note;
+    
+    private String nama_event;
+    private Calendar arrivaltime;
+    private Calendar departuretime;
+    
     
     //penamaan event saya ganti menjadi addEvent supaya tidak jadi kontrakstor
-    public void addEvent(int id_event, String eventName, int arrivaltime, int departuretime, int reminderoption, String note){
-        this.id_event = id_event;
-        this.eventName = eventName;
-        this.arrivaltime = arrivaltime;
-        this.departuretime = departuretime;
-        this.reminderoption = reminderoption;
-        this.note = note;
-    }
-
-/**
-     * @return the id_event
-     */
-    public int getId_event() {
-        return id_event;
+    public void addEvent(String nama_event, Calendar arrivaltime, Calendar departuretime){
+        
+        this.setNama_event(nama_event);
+        this.setArrivaltime(arrivaltime);
+        this.setDeparturetime(departuretime);
+        
     }
 
     /**
-     * @return the eventName
+     * @return the nama_event
      */
-    public String getEventName() {
-        return eventName;
+    public String getNama_event() {
+        return nama_event;
+    }
+
+    /**
+     * @param nama_event the nama_event to set
+     */
+    public void setNama_event(String nama_event) {
+        this.nama_event = nama_event;
     }
 
     /**
      * @return the arrivaltime
      */
-    public int getArrivaltime() {
+    public Calendar getArrivaltime() {
         return arrivaltime;
-    }
-
-    /**
-     * @return the departuretime
-     */
-    public int getDeparturetime() {
-        return departuretime;
-    }
-
-    /**
-     * @return the reminderoption
-     */
-    public int getReminderoption() {
-        return reminderoption;
-    }
-
-    /**
-     * @return the note
-     */
-    public String getNote() {
-        return note;
-    }
-
-    /**
-     * @param id_event the id_event to set
-     */
-    public void setId_event(int id_event) {
-        this.id_event = id_event;
-    }
-
-    /**
-     * @param eventName the eventName to set
-     */
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
     }
 
     /**
      * @param arrivaltime the arrivaltime to set
      */
-    public void setArrivaltime(int arrivaltime) {
+    public void setArrivaltime(Calendar arrivaltime) {
         this.arrivaltime = arrivaltime;
+    }
+
+    /**
+     * @return the departuretime
+     */
+    public Calendar getDeparturetime() {
+        return departuretime;
     }
 
     /**
      * @param departuretime the departuretime to set
      */
-    public void setDeparturetime(int departuretime) {
+    public void setDeparturetime(Calendar departuretime) {
         this.departuretime = departuretime;
     }
-
-    /**
-     * @param reminderoption the reminderoption to set
-     */
-    public void setReminderoption(int reminderoption) {
-        this.reminderoption = reminderoption;
-    }
-
-    /**
-     * @param note the note to set
-     */
-    public void setNote(String note) {
-        this.note = note;
+    public Calendar inputArrivalTime() {
+        Scanner scan = new Scanner(System.in);
+        Calendar at = Calendar.getInstance();
+        System.out.print("Tahun event dimulai : ");
+        int yearStart = Integer.parseInt(scan.nextLine());
+        System.out.print("Bulan event dimulai : ");
+        int monthStart = Integer.parseInt(scan.nextLine());
+        monthStart = monthStart - 1;
+        System.out.print("Tanggal event dimulai : ");
+        int dayStart = Integer.parseInt(scan.nextLine());
+        System.out.print("Jam Tiba : ");
+        int hourStart = Integer.parseInt(scan.nextLine());
+        System.out.print("Menit Tiba : ");
+        int minuteStart = Integer.parseInt(scan.nextLine());
+        int secondStart = 0;
+        at.set(yearStart, monthStart, dayStart, hourStart, minuteStart, secondStart);
+        return at;
     }
     
+    public Calendar inputDepartureTime() {
+        Scanner scan = new Scanner(System.in);
+        Calendar dt = Calendar.getInstance();
+        System.out.print("Tahun event dimulai : ");
+        int yearStart = Integer.parseInt(scan.nextLine());
+        System.out.print("Bulan event dimulai : ");
+        int monthStart = Integer.parseInt(scan.nextLine());
+        monthStart = monthStart - 1;
+        System.out.print("Tanggal event dimulai : ");
+        int dayStart = Integer.parseInt(scan.nextLine());
+        System.out.print("Jam Berangkat : ");
+        int hourStart = Integer.parseInt(scan.nextLine());
+        System.out.print("Menit Berangkat : ");
+        int minuteStart = Integer.parseInt(scan.nextLine());
+        int secondStart = 0;
+        dt.set(yearStart, monthStart, dayStart, hourStart, minuteStart, secondStart);
+        return dt;
+    }
     //Method supaya programbisa di running
     public static void main(String[] args)
     {
        Event E = new Event();
        
+       Calendar at = E.inputArrivalTime();
+       
        //Method input
-       E.addEvent(1234,"apajare",123,123,123,"apane");
+       //E.addEvent(1234,"apajare",123,123,123,"apane");
        //Method print ke layar
-       System.out.println("Event : " + E.id_event);
+       //System.out.println("Event : " + E.id_event);
     }   
+
+    
 }
