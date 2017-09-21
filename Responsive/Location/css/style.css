@@ -30,7 +30,7 @@ h4{
 	color: #fafafa;
 	font-weight: bold;
 	text-align: center;
-	background: #42A5F5;
+	background: #9e9e9e;
 	border: none;
 	border-radius: 0.2em;
 }
@@ -90,18 +90,18 @@ a:hover{
 		margin: 10px;
 		float: left;
 	}
-	
+
 	.menu-manage{
 		background: #f4f4f4;
 		overflow: hidden;
 		border: 1px solid #ddd;
 	}
-	
+
 	.menu-manage:hover{
 		background: #42A5F5;
 		transition: 0.3s;
 	}
-	
+
 	h2{
 		float: left;
 		padding: 7px;
@@ -109,19 +109,19 @@ a:hover{
 		font: 16px Arial;
 		color: #454545;
 	}
-	
+
 	h2:hover{
 		color: #fafafa;
 	}
-	
-	.add-traveller{
+
+	.add-data{
 		float: right;
 		padding: 7px;
 		margin: 7px;
 		font: 16px Arial;
 		font-weight: bold;
 		color: #fafafa;
-		background: #4CAF50;
+		background: #42A5F5;
 		border: none;
 		border-radius: 0.2em;
 	}
@@ -134,44 +134,44 @@ a:hover{
 		margin: 10px;
 		float: left;
 	}
-	
-	.kotak-traveller{
+
+	.kotak-data{
 		padding: 3px;
 		margin: 3px;
 		background: none;
 		overflow: hidden;
-		border: 1px solid #454545;
+		border: 1px solid #bdbdbd;
 	}
-	
+
 	#page-wrap {
 		margin: 50px;
 	}
 	p {
-		margin: 20px 0; 
+		margin: 20px 0;
 	}
 
-		/* 
-		Generic Styling, for Desktops/Laptops 
+		/*
+		Generic Styling, for Desktops/Laptops
 		*/
-		table { 
-			width: 100%; 
-			border-collapse: collapse; 
+		table {
+			width: 100%;
+			border-collapse: collapse;
 		}
 		/* Zebra striping */
-		tr:nth-of-type(odd) { 
-			background: #eee; 
+		tr:nth-of-type(odd) {
+			background: #eee;
 		}
-		th { 
-			background: #757575; 
-			color: white; 
-			font-weight: bold; 
+		th {
+			background: #757575;
+			color: white;
+			font-weight: bold;
 		}
-		td, th { 
-			padding: 6px; 
-			border: 1px solid #ccc; 
-			text-align: left; 
+		td, th {
+			padding: 6px;
+			border: 1px solid #ccc;
+			text-align: left;
 		}
-		
+
 			.middle img{
 				max-width: 100%;
 				height: auto;
@@ -195,7 +195,7 @@ MEDIA QUERIES
 *************************************************************************************/
 /* untuk ukuran 1080px kebawah */
 @media screen and (max-width: 1080px) {
-	
+
 	.wadah {
 		width: 100%;
 	}
@@ -207,14 +207,14 @@ MEDIA QUERIES
 		width: 68%;
 		float: right;
 	}
-	
+
 }
 
 
 /* untuk ukuran layar 700px kebawah */
 @media screen and (max-width: 780px) {
-	
-	.header, 
+
+	.header,
 	.footer{
 		text-align: center;
 	}
@@ -222,50 +222,50 @@ MEDIA QUERIES
 		width: auto;
 		float: none;
 	}
-	
+
 	.middle {
 		width: auto;
 		float: none;
 	}
-	
+
 }
 
 @media only screen and (max-width: 760px),
 	(min-device-width: 768px) and (max-device-width: 1024px)  {
-	
+
 		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr { 
-			display: block; 
+		table, thead, tbody, th, td, tr {
+			display: block;
 		}
-		
+
 		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr { 
+		thead tr {
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
 		}
-		
+
 		tr { border: 1px solid #ccc; }
-		
-		td { 
+
+		td {
 			/* Behave  like a "row" */
 			border: none;
-			border-bottom: 1px solid #eee; 
+			border-bottom: 1px solid #eee;
 			position: relative;
-			padding-left: 50%; 
+			padding-left: 50%;
 		}
-		
-		td:before { 
+
+		td:before {
 			/* Now like a table header */
 			position: absolute;
 			/* Top/left values mimic padding */
 			top: 6px;
 			left: 6px;
-			width: 45%; 
-			padding-right: 10px; 
+			width: 45%;
+			padding-right: 10px;
 			white-space: nowrap;
 		}
-		
+
 		/*
 		Label the data
 		*/
@@ -280,20 +280,20 @@ MEDIA QUERIES
 		td:nth-of-type(9):before { content: "GPA"; }
 		td:nth-of-type(10):before { content: "Arbitrary Data"; }
 	}
-	
+
 	/* Smartphones (portrait and landscape) ----------- */
 	@media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
-		body { 
-			padding: 0; 
-			margin: 0; 
+		body {
+			padding: 0;
+			margin: 0;
 			width: 320px; }
 		}
-	
+
 	/* iPads (portrait and landscape) ----------- */
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		body { 
-			width: 495px; 
+		body {
+			width: 495px;
 		}
 	}
