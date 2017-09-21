@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Travlendar-Back-End">
+  <ClassDiagramComponents>
+    <Class name="DistanceMatrix" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nama_kota" type="String" visibility="private"/>
+        <Field name="nama_kota2" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNama_kota" returnType="String" visibility="public"/>
+        <Method name="setNama_kota" returnType="void" visibility="public">
+          <Argument type="String" name="nama_kota"/>
+        </Method>
+        <Method name="getNama_kota2" returnType="String" visibility="public"/>
+        <Method name="setNama_kota2" returnType="void" visibility="public">
+          <Argument type="String" name="nama_kota2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EstimationTime" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="distance" type="int" visibility="private"/>
+        <Field name="speed" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDistance" returnType="int" visibility="public"/>
+        <Method name="setDistance" returnType="void" visibility="public">
+          <Argument type="int" name="distance"/>
+        </Method>
+        <Method name="getSpeed" returnType="int" visibility="public"/>
+        <Method name="setSpeed" returnType="void" visibility="public">
+          <Argument type="int" name="speed"/>
+        </Method>
+        <Method name="countEstimationTime" returnType="int" visibility="public">
+          <Argument type="int" name="speed"/>
+          <Argument type="int" name="distance"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Event" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="nama_event" type="String" visibility="private"/>
+        <Field name="arrivaltime" type="Calendar" visibility="private"/>
+        <Field name="departuretime" type="Calendar" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addEvent" returnType="void" visibility="public">
+          <Argument type="String" name="nama_event"/>
+          <Argument type="Calendar" name="arrivaltime"/>
+          <Argument type="Calendar" name="departuretime"/>
+        </Method>
+        <Method name="getNama_event" returnType="String" visibility="public"/>
+        <Method name="setNama_event" returnType="void" visibility="public">
+          <Argument type="String" name="nama_event"/>
+        </Method>
+        <Method name="getArrivaltime" returnType="Calendar" visibility="public"/>
+        <Method name="setArrivaltime" returnType="void" visibility="public">
+          <Argument type="Calendar" name="arrivaltime"/>
+        </Method>
+        <Method name="getDeparturetime" returnType="Calendar" visibility="public"/>
+        <Method name="setDeparturetime" returnType="void" visibility="public">
+          <Argument type="Calendar" name="departuretime"/>
+        </Method>
+        <Method name="inputArrivalTime" returnType="Calendar" visibility="public"/>
+        <Method name="inputDepartureTime" returnType="Calendar" visibility="public"/>
+        <Method name="getEvent" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Location" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="kode_lokasi" type="int" visibility="private"/>
+        <Field name="nama_lokasi" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getKode_lokasi" returnType="int" visibility="public"/>
+        <Method name="setKode_lokasi" returnType="void" visibility="public">
+          <Argument type="int" name="kode_lokasi"/>
+        </Method>
+        <Method name="getNama_lokasi" returnType="String" visibility="public"/>
+        <Method name="setNama_lokasi" returnType="void" visibility="public">
+          <Argument type="String" name="nama_lokasi"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="locationEvent" type="Location" visibility="private"/>
+        <Field name="distance" type="DistanceMatrix" visibility="private"/>
+        <Field name="esTime" type="EstimationTime" visibility="private"/>
+        <Field name="transport" type="TransportationMode" visibility="private"/>
+        <Field name="event" type="Event" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TransportationMode" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="jenisKendaraan" type="Transport" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getJenisKendaraan" returnType="Transport" visibility="public"/>
+        <Method name="setJenisKendaraan" returnType="void" visibility="public">
+          <Argument type="Transport" name="jenisKendaraan"/>
+        </Method>
+        <Method name="vehicleSpeed" returnType="int" visibility="public">
+          <Argument type="Transport" name="vhc"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Traveller" package="id.ac.polban.jtk.project3.travlendar2A.model" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_traveller" type="int" visibility="private"/>
+        <Field name="username" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="fullname" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+        <Constructor visibility="package">
+          <Argument type="String" name="fullname"/>
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="password"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId_traveller" returnType="int" visibility="public"/>
+        <Method name="setId_traveller" returnType="void" visibility="public">
+          <Argument type="int" name="id_traveller"/>
+        </Method>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getFullname" returnType="String" visibility="public"/>
+        <Method name="setFullname" returnType="void" visibility="public">
+          <Argument type="String" name="fullname"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="locationEvent" source="id.ac.polban.jtk.project3.travlendar2A.model.Main" target="id.ac.polban.jtk.project3.travlendar2A.model.Location" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="event" source="id.ac.polban.jtk.project3.travlendar2A.model.Main" target="id.ac.polban.jtk.project3.travlendar2A.model.Event" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="distance" source="id.ac.polban.jtk.project3.travlendar2A.model.Main" target="id.ac.polban.jtk.project3.travlendar2A.model.DistanceMatrix" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="esTime" source="id.ac.polban.jtk.project3.travlendar2A.model.Main" target="id.ac.polban.jtk.project3.travlendar2A.model.EstimationTime" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="transport" source="id.ac.polban.jtk.project3.travlendar2A.model.Main" target="id.ac.polban.jtk.project3.travlendar2A.model.TransportationMode" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
