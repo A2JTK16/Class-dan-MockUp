@@ -1,0 +1,10 @@
+1. Bandung - Bogor 140 KM ; Bogor Bandung 138 KM ; Bogor - jakarta 61 km ; jakarta bogor 62, 2 km
+2. jakarta bandung 152 km; bandung jakarta 153 km; Bandung sumedang 54,1 km ; sumedang bandung 50,2 km
+3. sumedang bogor 239 km; bogor sumedang 240 km; sumedang jakarta 203 km ;jakarta sumedang 203 km
+4. jakarta tasik 259 km; tasik jakarta 263 km ; tasik bogor 295 km; bogor tasik 290 km; 
+5. bandung tasik 114 km ; tasik bandung 117 km ; bogor bekasi 59,5 km; bekasi bogor 59,4 km 
+6. bekasi jakarta 26 km ; jakarta bekasi 25,7 km ;bekasi - bandung 136km ; bandung bekasi 134 km; 
+
+
+
+
