@@ -1,0 +1,8 @@
+1. kenapa harus save as pdf,kenapa tidak save as image
+2. kenapa namanya calendar sedangkan yang di tampilkan konteksnya list 
+   yang kita inputkan.
+3. kenapa setiap user melakukan transaksi harus memilih zona waktunya sendiri
+   kenapa tidak otomatis memilih time zonenya ketika kita memilih wilayah yang dituju
+4. harusnya ketika save add new event maka user akan beralih langsung ke page pilihan kendaraan
+   sehingga di list event sudah terlihat pilihan kendaraan yang user pilih
+5. kenapa page view travel event tidak di tampilkan di page view list event
