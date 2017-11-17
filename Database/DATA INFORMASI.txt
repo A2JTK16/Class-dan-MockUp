@@ -1,0 +1,22 @@
+DATA INFORMASI
+
+Travel : 
+nama lengkap
+username
+alamat
+email
+password
+
+event :
+nama event
+tanggal event
+waktu event
+lokasi event
+latitut lokasi
+langitut lokasi
+
+admin :
+nama admin
+username admin
+password admin
+email admin
