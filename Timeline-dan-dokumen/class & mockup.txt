@@ -1,0 +1,82 @@
+class dan mockup
+2 Oktober
+Said :
+1. edit dokumen
+2. pembuatan bisnis proses traveler dan documen versi awal
+3. perubahan use case diagram
+4. perubahan versi use case diagram
+5. ganti nama folder mockup
+faiz:
+1. update mockup admin 
+
+3 Oktober
+said :
+1. meluruskan garis action
+2. menambahkan data master dan data transaksi pada dokumen
+3. membuat tabel skenario dan update artefak skenario traveler
+4. review pembuatan flow
+5. merge branch master
+faiz:
+1. tambahin note di add new event
+maulana :
+1. review mockup user
+
+9 Oktober
+Nurindah :
+1. update database yang sudah di review
+wira :
+1. memberbarui studi kasus
+said :
+1. mindahin dokumen, update flow studi kasus
+2. upload file yed studi kasus
+3. upload installan yed
+ira :
+1. mock up user
+faiz:
+1. rapihin repo
+
+10 Oktober :
+ira :
+1. upload screen flow
+
+14 Oktober :
+Faiz : update mockup
+
+15 Oktober :
+faiz :
+1. update mockup, pemilihan waktu, ganti cara oilih jam
+
+16 Oktober
+faiz :
+1. update mockup
+2. ubah tampilan kalender, ubah date & time
+3. update mock up png
+4. tambah fungsi view more untuk lihat event
+said :
+1.update activity diagram versi 13
+ira :
+1. srs travlendar
+
+17 Oktober 
+Said :
+1. update activity diagram dan use case
+faiz :
+1. nambah screen flow user, edit mockup
+2. screen flow admin
+mufid :
+1. nambah sequence diagram crud agenda
+
+21 Oktober 
+Mufid :
+1. upload diagram 
+
+23 Oktober
+faiz :
+1. merapihkan repositiry
+
+24 Oktober 
+mufid :
+1. class diagram 
+2. model domain
+3. memakai dao pattern
+4. class diagram versi 2

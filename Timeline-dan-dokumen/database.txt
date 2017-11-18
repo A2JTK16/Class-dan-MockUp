@@ -1,0 +1,38 @@
+Database
+2 Oktober
+Putri Dian 
+1. Pengupdate database 
+
+6 Oktober
+Nurindah :
+1. Review Skema Database
+Naufal :
+1. Upload db yg sudah di review
+
+7 Oktober
+naufal :
+1. update db versi 2
+
+9 Oktober
+naufal :
+1. update dan menghapus atribut tanggal dan mnegganti tipe data waktu mulai event dan waktu berakhir event menjadi date & time
+2. ganti atribute arrival time menjadi mandatory
+
+13 Oktober 
+Nufal :
+1. ubah hubungan pada entity perjalanan dan jarak
+  
+15 Oktober 
+Nurindah :
+1. mengganti bahasa di dalam entity maupum atribut awalnya bahasa indonesia jadi bahasa inggris
+
+16 Oktober 
+Naufal :
+1. datamaster sudah dimasukkan ke database
+2. mengubah relasi dan penamaan dari beberapa entity
+3. add mysql query 
+
+23 Oktober 
+
+30 Oktober 
+1. upl

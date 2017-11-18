@@ -1,0 +1,19 @@
+Timeline dan document
+
+2 Oktober 
+Putri Dian :
+1. upload data master kota di indonesia
+naufal :
+1. add new data master
+
+3 Oktober 
+Nufal :
+1. melengkapi data master kota di indonesia
+
+15 Oktober 
+Putri Dian 
+1. Kode Provinsi + data provinsi di indonesia lengkap
+2. daftar kota dan provinsi di satukan
+30 Oktober 
+ira :
+1. upload srs
