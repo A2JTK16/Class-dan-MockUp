@@ -1,0 +1,6 @@
+Review untuk Flow 
+
+1. Flow untuk pengguna nya mana ? ini flow hanya untuk admin.
+2. untuk isi dari data schedule cukup Location saja tidak usah ada Lokasi Event
+karena di mock up dan database hanya ada Location saja.
+
